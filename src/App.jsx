@@ -13,9 +13,7 @@ const App = () => {
    // Function to fetch Oceania countries
    const fetchOceaniaCountries = async () => {
       try {
-         const response = await axios.get(`${API_HOST}/population/oceania`);
-         // original line
-         // const response = await axios.get(`${API_HOST}/oceania`);
+         const response = await axios.get(`${API_HOST}/oceania`);
 
          return response.data;
       } catch (error) {
